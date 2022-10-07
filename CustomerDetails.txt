@@ -1,0 +1,31 @@
+
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class CustDetails {
+ static List<Customers>  l=new ArrayList<>();
+static int p=0;
+   public static List<Customers> getDetails(){
+	
+	
+	Customers c1=new Customers(2372745,"ramesh","9843319089","8/5/2001",6000,7843);
+	Customers c2=new Customers(3372746,"harish","9843319088","3/6/2002",7000,9790);
+	Customers c3=new Customers(8372747,"rajesh","9843319087","3/8/2000",3000,8585);
+	Customers c4=new Customers(2372748,"suresh","9843319086","1/4/2003",9000,9943);
+
+	if(p==0) {
+       l.add(c1);
+       l.add(c2);
+       l.add(c3);
+       l.add(c4);
+    p=1;
+	}
+      return l;
+ 
+     }
+     
+} 
+   
